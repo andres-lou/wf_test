@@ -17,4 +17,6 @@ jobs:
         run: |
           echo HOAL MUNDO
           echo $CAKE
+          echo $CAKE > file
           echo $PWD
+          cat file
