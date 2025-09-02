@@ -1,0 +1,19 @@
+name: test
+
+on:
+  schedule:     
+    - cron: '*/3 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: test workflows
+        env:
+          CAKE: ${{ secrets.CAKE }}
+        run: |
+          echo $CAKE > cake
+          cat cake
+          echo HOAL MUNDO
+
