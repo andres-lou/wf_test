@@ -22,4 +22,4 @@ jobs:
           echo " ola k ase" >> file
           echo " cake: $CAKE" >> file
           echo zorro caravanero >> file
-
+          cat file
