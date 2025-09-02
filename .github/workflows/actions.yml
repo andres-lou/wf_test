@@ -15,8 +15,6 @@ jobs:
       - name: get cake
         env:
           CAKE: ${{ secrets.CAKE }}
-
-      - name: output
         run: |
           echo $CAKE > cake
           cat cake
