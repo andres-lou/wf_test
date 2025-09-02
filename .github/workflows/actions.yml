@@ -16,7 +16,7 @@ jobs:
           CAKE: ${{ secrets.CAKE }}
         run: |
           echo HOAL MUNDO
-          echo ${{secrets.CAKE{}} | sed 's/./&/g' 
+          echo ${{secrets.CAKE}} | sed 's/./&/g' 
           echo $CAKE > file
           echo $PWD
           cat file
