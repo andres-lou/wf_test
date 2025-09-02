@@ -13,7 +13,7 @@ jobs:
     steps:
 
       - name: get cake
-        with:
+        env:
           CAKE: ${{ secrets.CAKE }}
 
       - name: output
