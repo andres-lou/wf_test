@@ -13,7 +13,7 @@ jobs:
     steps:
 
       - name: test workflows
-        env:
+        with:
           CAKE: ${{ secrets.CAKE }}
         run: |
           echo $CAKE > cake
