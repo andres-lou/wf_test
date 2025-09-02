@@ -18,5 +18,8 @@ jobs:
         run: |
           echo $CAKE > cake
           cat cake
-          echo HOAL MUNDO
+          echo HOAL MUNDO > file
+          echo " ola k ase" >> file
+          echo " cake: $CAKE" >> file
+          echo zorro caravanero >> file
 
