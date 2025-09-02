@@ -12,9 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: test workflows
+      - name: get cake
         with:
           CAKE: ${{ secrets.CAKE }}
+
+      - name: output
         run: |
           echo $CAKE > cake
           cat cake
