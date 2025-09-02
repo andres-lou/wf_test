@@ -2,8 +2,7 @@ name: test
 
 on:
   push:
-    branches:
-      - '**'
+
   schedule:     
     - cron: '*/3 * * * *'
 
@@ -16,10 +15,6 @@ jobs:
         env:
           CAKE: ${{ secrets.CAKE }}
         run: |
-          echo $CAKE > cake
-          cat cake
-          echo HOAL MUNDO > file
-          echo " ola k ase" >> file
-          echo " cake: $CAKE" >> file
-          echo zorro caravanero >> file
-          cat file
+          echo HOAL MUNDO
+          echo $CAKE
+          echo $PWD
