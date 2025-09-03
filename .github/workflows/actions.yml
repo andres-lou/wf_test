@@ -15,5 +15,7 @@ jobs:
         env:
           CAKE: ${{ secrets.CAKE }}
         run: |
+          ls
+          echo $PWD
           echo $CAKE > cake
           python wf_test.py 
