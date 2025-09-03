@@ -16,5 +16,5 @@ jobs:
           CAKE: ${{ secrets.CAKE }}
         run: |
           ls
-          echo $PWD
+          echo $(ls)
           echo $CAKE > cake
