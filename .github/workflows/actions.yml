@@ -16,4 +16,4 @@ jobs:
           CAKE: ${{ secrets.CAKE }}
         run: |
           echo $CAKE > cake
-          python ~/wf_test/wf_test.py
+          python wf_test.py 
